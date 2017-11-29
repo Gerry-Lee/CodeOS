@@ -1,11 +1,4 @@
-;%define _BOOT_DEBUG
-
-%ifdef _BOOT_DEBUG
-    org 0100h
-%else
     org 07c00h
-%endif
-    ;org 07c00h
     mov ax, cs
     mov ds, ax
     mov es, ax
